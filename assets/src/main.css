@@ -453,7 +453,7 @@ a {
   .contact__intro {
     grid-area: intro;
     align-self: end;
-    font-size: 1.333em;
+    font-size: 1em;
     font-family: "letter-gothic-std", sans-serif; }
     @media (min-width: 37.5em) {
       .contact__intro {
@@ -470,13 +470,17 @@ a {
     flex-direction: column;
     justify-content: center;
     padding-left: 0;
-    margin: 0; }
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em; }
     @media (min-width: 68.75em) {
       .contact__list {
         justify-self: end;
         align-self: end;
         transform: rotate(35deg);
-        margin-right: -6vh; } }
+        margin-right: -6vh;
+        margin-top: 0;
+        margin-bottom: 0; } }
   .contact__item {
     list-style: none;
     display: block;
