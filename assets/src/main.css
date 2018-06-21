@@ -370,7 +370,7 @@ th {
 
 html {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: 1.04px; }
 
 body {
@@ -456,11 +456,13 @@ a {
     grid-area: intro;
     align-self: end;
     font-size: 1.776889em;
-    font-weight: 700;
     font-family: "letter-gothic-std", sans-serif; }
     @media (min-width: 68.75em) {
       .contact__intro {
         font-size: 2.368593037em; } }
+    .contact__intro p:first-child {
+      margin-bottom: 0.2em;
+      font-weight: 400; }
   .contact__list {
     grid-area: list;
     display: flex;

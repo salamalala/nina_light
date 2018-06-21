@@ -61,11 +61,15 @@
 		grid-area: intro;
 		align-self: end;
 		font-size: $font-size-lg;
-		font-weight: 700;
 		font-family: $secondary-font;
 
 		@media #{$screen-lg} {
 			font-size: $font-size-xl;
+		}
+
+		p:first-child {
+			margin-bottom: 0.2em;
+			font-weight: 400;
 		}
 	}
 
