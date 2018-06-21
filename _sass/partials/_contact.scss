@@ -1,18 +1,80 @@
 .contact {
-  display: flex;
-  flex-direction: column;
+	margin: 2vh;
+	background-color: $slate-grey;
+	transition: background-color 1.2s;
+	overflow: hidden;
+	position: relative;
+	min-height: calc(100vh - 4vh);
 
-  &__msg {
-    width: 55%;
-    text-align: center;
+	&__title {
+    position: absolute;
+    line-height: 0.8;
+    font-size: 14vw;
+    top: -2vw;
+    right: -2vw;
+    color: transparentize($white, 0.8);
+
+		@media #{$screen-xs}{
+			font-size: 16vw;
+		}
+
+		@media #{$screen-sm}{
+			font-size: 20vw;
+		}
   }
 
+	&__main {
+		display: grid;
+		grid-template-areas:
+			"header header"
+			"intro intro"
+			"list list";
+		grid-template-columns: 5fr 3fr;
+		grid-column-gap: 6vh;
+		min-height: calc(100vh - 10vh);
+		padding: 3vh;
+
+		@media #{$screen-lg} {
+			grid-template-areas:
+				"header header"
+				"intro list"
+		}
+	}
+
+	&__subtitle {
+		grid-area: header;
+		justify-self: end;
+		color: transparentize($white, 0.3);
+		text-transform: uppercase;
+		font-size: 3vw;
+	}
+
+	&__intro {
+		grid-area: intro;
+		align-self: end;
+		font-size: $font-size-lg;
+		font-weight: 700;
+		font-family: $secondary-font;
+
+		@media #{$screen-xl} {
+			font-size: $font-size-xl;
+		}
+	}
+
   &__list {
-    width: 30%;
+		grid-area: list;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 0;
+		margin: 0;
+
+		@media #{$screen-lg} {
+			justify-self: center;
+			align-self: end;
+			transform: rotate(35deg);
+			margin-right: -6vh;
+		}
   }
 
   &__item {
@@ -23,7 +85,6 @@
   }
 
   &__link:hover {
-
     .contact__username {
       background-color: $dark-grey;
       color: transparentize($yellow, 1);
@@ -35,14 +96,15 @@
   }
 
   &__username {
-    position: absolute;
+		position: absolute;
+		padding: 0.4em 0;
     top: 50%;
-    width: 100%;
     left: 0;
+		width: 100%;
     transform: translateY(-50%);
     z-index: 2;
     letter-spacing: $letter-spacing-lg;
-    color: $yellow;
+    color: $yellow-strong;
     background-color: transparentize($dark-grey, 0.4);
     transition: $hover-transition;
   }
@@ -54,9 +116,5 @@
     display: block;
     text-transform: uppercase;
     transition: $hover-transition;
-
-    @screen #{$screen-md} {
-      font-size: $font-size-xxxl;
-    }
   }
 }

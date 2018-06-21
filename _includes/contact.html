@@ -1,22 +1,26 @@
-<section class="section contact" id="contact">
+<section class="contact" id="contact">
 
-  <h1 class="section__title">contact</h1>
+  <h1 class="contact__title">Nina Regli</h1>
 
-  <h2 class="section__subtitle">Want to work together? Yes me probably too. Say hello. </h2>
+	<div class="contact__main">
 
-  <div class="section__main">
+		<h2 class="contact__subtitle">Web Designer & Developer</h2>
 
-    <ul class="contact__list">
-      {% for contact in site.data.contacts %}
-      <li class="contact__item">
-        <a href="{{contact.link}}" class="contact__link" target="_blank">
-          <span class="contact__username">{{ contact.username }}</span>
-          <span class="contact__type">{{ contact.type }}</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+		<p class="contact__intro">I design and build responsive Websites, mostly custom WordPress themes or static Jekyll sites. My websites are user-friendly, robust and easily maintainable.
+		<br />Want to work together? Don't be shy and say hello. </p>
 
-  </div>
+		<ul class="contact__list">
+			{% for contact in site.data.contacts %}
+			<li class="contact__item">
+				<a href="{{contact.link}}" class="contact__link" target="_blank">
+					<span class="contact__username">{{ contact.username }}</span>
+					<span class="contact__type">{{ contact.type }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+
+	</div>
+
 
 </section>
