@@ -35,10 +35,6 @@ h2 {
   }
 }
 
-h3 {
-  font-size: $font-size-base;
-  font-family: $secondary-font;
-}
 
 p {
   font-weight: 300;
@@ -48,4 +44,10 @@ p {
 a {
   text-decoration: none;
   color: $white;
+}
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading p {
+	visibility: hidden;
 }

@@ -398,10 +398,6 @@ h2 {
     h2 {
       font-size: 1.776889em; } }
 
-h3 {
-  font-size: 1em;
-  font-family: "letter-gothic-std", sans-serif; }
-
 p {
   font-weight: 300;
   margin: 0; }
@@ -409,6 +405,11 @@ p {
 a {
   text-decoration: none;
   color: #FDFDFD; }
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading p {
+  visibility: hidden; }
 
 .contact {
   margin: 2vh;
