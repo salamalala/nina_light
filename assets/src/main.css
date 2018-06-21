@@ -412,11 +412,17 @@ a {
 
 .contact {
   margin: 2vh;
-  background-color: #738290;
+  background: linear-gradient(120deg, #84C3CF 0%, #3C4241 100%);
   transition: background-color 1.2s;
   overflow: hidden;
   position: relative;
   min-height: calc(100vh - 4vh); }
+  @media (min-width: 37.5em) {
+    .contact {
+      background: linear-gradient(120deg, #74857F 0%, #5B55CF 100%); } }
+  @media (min-width: 68.75em) {
+    .contact {
+      background: linear-gradient(120deg, #86748A 0%, #6fdbbc 100%); } }
   .contact__title {
     position: absolute;
     line-height: 0.8;
@@ -443,7 +449,7 @@ a {
   .contact__subtitle {
     grid-area: header;
     justify-self: end;
-    color: rgba(253, 253, 253, 0.7);
+    color: rgba(253, 253, 253, 0.8);
     text-transform: uppercase;
     font-size: 3vw; }
   .contact__intro {
@@ -452,7 +458,7 @@ a {
     font-size: 1.776889em;
     font-weight: 700;
     font-family: "letter-gothic-std", sans-serif; }
-    @media (min-width: 81.25em) {
+    @media (min-width: 68.75em) {
       .contact__intro {
         font-size: 2.368593037em; } }
   .contact__list {
@@ -464,7 +470,7 @@ a {
     margin: 0; }
     @media (min-width: 68.75em) {
       .contact__list {
-        justify-self: center;
+        justify-self: end;
         align-self: end;
         transform: rotate(35deg);
         margin-right: -6vh; } }
@@ -475,10 +481,18 @@ a {
     position: relative; }
   .contact__link:hover .contact__username {
     background-color: #3C4241;
-    color: rgba(214, 193, 122, 0); }
+    color: rgba(253, 253, 253, 0);
+    transform: rotate(7deg); }
   .contact__link:hover .contact__type {
-    color: #D9688A;
-    z-index: 5; }
+    color: #ffd751;
+    z-index: 5;
+    transform: rotate(-7deg); }
+    @media (min-width: 37.5em) {
+      .contact__link:hover .contact__type {
+        color: #D9688A; } }
+    @media (min-width: 68.75em) {
+      .contact__link:hover .contact__type {
+        color: #5B55CF; } }
   .contact__username {
     position: absolute;
     padding: 0.4em 0;
@@ -488,15 +502,18 @@ a {
     transform: translateY(-50%);
     z-index: 2;
     letter-spacing: 1.1px;
-    color: #ffd751;
+    color: #FDFDFD;
     background-color: rgba(60, 66, 65, 0.6);
-    transition: all 0.1s ease-out; }
+    transition: all 0.3s ease-out;
+    transform: rotate(0deg); }
   .contact__type {
+    color: rgba(253, 253, 253, 0.7);
     position: relative;
     font-family: "letter-gothic-std", sans-serif;
     font-size: 4.2087269129em;
     display: block;
     text-transform: uppercase;
-    transition: all 0.1s ease-out; }
+    transition: all 0.3s ease-out;
+    transform: rotate(0deg); }
 
 /*# sourceMappingURL=main.css.map */

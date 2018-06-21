@@ -16,15 +16,13 @@ $modularscale: (
   ratio: 1.333
 );
 
-$font-size-xs: ms(-2);
-$font-size-sm: ms(-1);
+
 $font-size-base: ms(0);
 $font-size-md: ms(1);
 $font-size-lg: ms(2);
 $font-size-xl: ms(3);
 $font-size-xxl: ms(4);
 $font-size-xxxl: ms(5);
-$font-size-xxxxl: ms(9);
 
 // Line height
 $base-line-height: 1.5;
@@ -39,14 +37,6 @@ $letter-spacing-xl: 2px;
 $base-border-radius: 0;
 $base-z-index: 0;
 
-//Spacing with modular scales
-$spacing-xs: ms(-2);
-$spacing-sm: ms(-1);
-$spacing-base: ms(0);
-$spacing-md: ms(2);
-$spacing-lg: ms(3);
-$spacing-xl: ms(4);
-$spacing-xxl: ms(8);
 
 //Media queries
 $screen-xs: "(min-width: 20em)";
@@ -66,9 +56,7 @@ $yellow: #D6C17A;
 $purple: #A786AD;
 $blue: #84C3CF;
 
-//trying out colors
-$beige: #BEC5AD;
-$khaki: #C3A995;
+$dark-grey-violet: #86748A;
 $slate-grey: #738290;
 
 $turquois-strong: saturate($turquois, 20%);
@@ -80,4 +68,4 @@ $pink-strong: #D9688A;
 $base-font-color: $white;
 
 // Transitions
-$hover-transition: all 0.1s ease-out;
+$hover-transition: all 0.3s ease-out;

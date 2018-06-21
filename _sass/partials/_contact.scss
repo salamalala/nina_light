@@ -1,10 +1,18 @@
 .contact {
 	margin: 2vh;
-	background-color: $slate-grey;
+	background: linear-gradient(120deg, $blue 0%, $dark-grey 100%);
 	transition: background-color 1.2s;
 	overflow: hidden;
 	position: relative;
 	min-height: calc(100vh - 4vh);
+
+	@media #{$screen-sm} {
+		background: linear-gradient(120deg, $light-grey 0%, $purple-strong 100%);
+	}
+
+	@media #{$screen-lg} {
+		background: linear-gradient(120deg, $dark-grey-violet 0%, $turquois-strong 100%);
+	}
 
 	&__title {
     position: absolute;
@@ -44,7 +52,7 @@
 	&__subtitle {
 		grid-area: header;
 		justify-self: end;
-		color: transparentize($white, 0.3);
+		color: transparentize($white, 0.2);
 		text-transform: uppercase;
 		font-size: 3vw;
 	}
@@ -56,7 +64,7 @@
 		font-weight: 700;
 		font-family: $secondary-font;
 
-		@media #{$screen-xl} {
+		@media #{$screen-lg} {
 			font-size: $font-size-xl;
 		}
 	}
@@ -70,7 +78,7 @@
 		margin: 0;
 
 		@media #{$screen-lg} {
-			justify-self: center;
+			justify-self: end;
 			align-self: end;
 			transform: rotate(35deg);
 			margin-right: -6vh;
@@ -87,11 +95,22 @@
   &__link:hover {
     .contact__username {
       background-color: $dark-grey;
-      color: transparentize($yellow, 1);
+      color: transparentize($white, 1);
+			transform: rotate(7deg);
     }
     .contact__type {
-      color: $pink-strong;
+			color: $yellow-strong;
       z-index: 5;
+			transform: rotate(-7deg);
+
+			@media #{$screen-sm} {
+				color: $pink-strong;
+			}
+
+			@media #{$screen-lg} {
+				color: $purple-strong;
+			}
+
     }
   }
 
@@ -104,17 +123,20 @@
     transform: translateY(-50%);
     z-index: 2;
     letter-spacing: $letter-spacing-lg;
-    color: $yellow-strong;
+    color: $white;
     background-color: transparentize($dark-grey, 0.4);
     transition: $hover-transition;
+		transform: rotate(0deg);
   }
 
   &__type {
+		color: transparentize($white, 0.3);
     position: relative;
     font-family: $secondary-font;
     font-size: $font-size-xxxl;
     display: block;
     text-transform: uppercase;
     transition: $hover-transition;
+		transform: rotate(0deg);
   }
 }
