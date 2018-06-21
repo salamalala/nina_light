@@ -17,14 +17,10 @@
 	&__title {
     position: absolute;
     line-height: 0.8;
-    font-size: 14vw;
+    font-size: 18vw;
     top: -2vw;
     right: -2vw;
     color: transparentize($white, 0.8);
-
-		@media #{$screen-xs}{
-			font-size: 16vw;
-		}
 
 		@media #{$screen-sm}{
 			font-size: 20vw;
@@ -60,8 +56,12 @@
 	&__intro {
 		grid-area: intro;
 		align-self: end;
-		font-size: $font-size-lg;
+		font-size: $font-size-md;
 		font-family: $secondary-font;
+
+		@media #{$screen-sm} {
+			font-size: $font-size-lg;
+		}
 
 		@media #{$screen-lg} {
 			font-size: $font-size-xl;
@@ -137,10 +137,14 @@
 		color: transparentize($white, 0.3);
     position: relative;
     font-family: $secondary-font;
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xl;
     display: block;
     text-transform: uppercase;
     transition: $hover-transition;
 		transform: rotate(0deg);
+
+		@media #{$screen-sm} {
+		  font-size: $font-size-xxxl;
+		}
   }
 }

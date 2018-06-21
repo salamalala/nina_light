@@ -427,13 +427,10 @@ a {
   .contact__title {
     position: absolute;
     line-height: 0.8;
-    font-size: 14vw;
+    font-size: 18vw;
     top: -2vw;
     right: -2vw;
     color: rgba(253, 253, 253, 0.2); }
-    @media (min-width: 20em) {
-      .contact__title {
-        font-size: 16vw; } }
     @media (min-width: 37.5em) {
       .contact__title {
         font-size: 20vw; } }
@@ -456,8 +453,11 @@ a {
   .contact__intro {
     grid-area: intro;
     align-self: end;
-    font-size: 1.776889em;
+    font-size: 1.333em;
     font-family: "letter-gothic-std", sans-serif; }
+    @media (min-width: 37.5em) {
+      .contact__intro {
+        font-size: 1.776889em; } }
     @media (min-width: 68.75em) {
       .contact__intro {
         font-size: 2.368593037em; } }
@@ -513,10 +513,13 @@ a {
     color: rgba(253, 253, 253, 0.7);
     position: relative;
     font-family: "letter-gothic-std", sans-serif;
-    font-size: 4.2087269129em;
+    font-size: 2.368593037em;
     display: block;
     text-transform: uppercase;
     transition: all 0.3s ease-out;
     transform: rotate(0deg); }
+    @media (min-width: 37.5em) {
+      .contact__type {
+        font-size: 4.2087269129em; } }
 
 /*# sourceMappingURL=main.css.map */
