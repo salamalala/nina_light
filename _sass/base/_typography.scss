@@ -48,6 +48,8 @@ a {
 
 .wf-loading h1,
 .wf-loading h2,
-.wf-loading p {
+.wf-loading p,
+.wf-loading a,
+.wf-loading span {
 	visibility: hidden;
 }

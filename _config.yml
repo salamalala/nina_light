@@ -16,7 +16,7 @@
 title: Nina Regli
 email: hello@ninaregli.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is the site of the designer and web developer Nina Regli.
+  This is the personal Website of the designer and web developer Nina Regli.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ninaregli.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NinaRegli
@@ -27,6 +27,7 @@ linkedin_username: ninaregli
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-analytics
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
