@@ -468,7 +468,7 @@ a {
         font-size: 1.776889em; } }
     @media (min-width: 68.75em) {
       .contact__intro {
-        font-size: 2.368593037em; } }
+        font-size: 3.2vw; } }
     .contact__intro p:first-child {
       margin-bottom: 0.2em;
       font-weight: 400; }
